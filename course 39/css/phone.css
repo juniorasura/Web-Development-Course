@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0%;
+}
+
+/* navigation */
+#navbar ul li a {
+    font-size: 0.9rem;
+    padding: 0 7px;
+}
+#navbar{
+    overflow: hidden;
+}
+
+
+
+/* home section */
+
+
+.h-primary {
+    font-size: 1.3rem;
+    padding: 8px;
+    font-family: var(--font3);
+}
+#home p {
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    font-family: var(--font4);
+}
+
+/* service section */
+
+#services {
+    flex-direction: column;
+
+}
+
+.h-secondary {
+    font-size: 1.2rem;
+    padding: 8px;
+    font-family: var(--font3);
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+/* os section */
+
+
+
+
+
+/* contact section */
+
+
+#contact-box input,
+#contact-box textarea {
+    border: 1.5px solid white;
+    width: 140%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    color: white;
+    font-size: 0.9rem;
+    background-color: transparent;
+}
+
+#send {
+    margin-top: 10px;
+    width: 40%;
+    border: 1.5px solid white;
+    padding: 0.5rem;
+    border-radius: 6px;
+    color: aliceblue;
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+
+
+
+/* footer section */
+footer{
+    font-size: 0.7rem;
+}

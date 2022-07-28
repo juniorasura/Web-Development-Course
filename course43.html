@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autofit and MinMax</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 0.5rem;
+            /* grid-template-columns: 1fr 1fr 1fr ; */
+            grid-template-columns: repeat(Auto-fit, minmax(250px, 2fr));
+        }
+
+        .box {
+            border: 2px solid crimson;
+            background-color: aqua;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+
+        .box:hover {
+            background-color: red;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Items-1</div>
+        <div class="box">Items-2</div>
+        <div class="box">Items-3</div>
+        <div class="box">Items-4</div>
+        <div class="box">Items-5</div>
+        <div class="box">Items-6</div>
+        <div class="box">Items-7</div>
+        <div class="box">Items-8</div>
+        <div class="box">Items-9</div>
+        <div class="box">Items-10</div>
+        <div class="box">Items-11</div>
+        <div class="box">Items-12</div>
+        <div class="box">Items-13</div>
+        <div class="box">Items-14</div>
+        <div class="box">Items-15</div>
+        <div class="box">Items-16</div>
+    </div>
+</body>
+
+</html>

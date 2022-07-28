@@ -1,0 +1,151 @@
+/* NAVIGATION */
+#navbar {
+    flex-direction: column;
+   
+}
+
+
+/*HOME SECTION */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 3px 50px;
+
+}
+
+#home {
+    height: 390px;
+}
+
+#home::before {
+    height: 480px;
+}
+
+
+/* SERVICES SECTION */
+#services {
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+}
+
+.services-container {
+    margin-top: 120px;
+}
+
+#services {
+    margin: 14px;
+    display: flex;
+}
+
+#services .box {
+    /* border: 2px solid red; */
+    padding: 30px;
+    margin: 3px;
+    border-radius: 7px;
+    width: auto;
+    background-color: rgb(245, 238, 238);
+}
+
+#services .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 4px;
+    width: auto;
+}
+
+#services .box {
+    font-family: var(--font5);
+}
+
+#services .box .btn {
+    color: red;
+    border: 0.1px solid red;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#services .box .btn:hover {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.767);
+    transform: translateY(-5px);
+}
+
+.services-container {
+    margin-top: 55px;
+}
+
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 8px;
+    font-family: var(--font3);
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+
+/* OS SECTION */
+#os {
+    flex-wrap: wrap;
+}
+
+#os img {
+    width: 156px;
+    padding: 0 25px;
+}
+
+
+/* CONTACT SECTION */
+
+#contact-box input,
+#contact-box textarea {
+    border: 1.5px solid white;
+    width: 130%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    color: white;
+    font-size: 0.9rem;
+    background-color: transparent;
+}
+
+#send {
+    margin-top: 10px;
+    width: 30%;
+    border: 1.5px solid white;
+    padding: 0.5rem;
+    border-radius: 6px;
+    color: aliceblue;
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+
+
+/* FOOTER */
+footer {
+    font-size: 0.9rem;
+}
+
+
+
+
+/* utility classes  */
+.h-primary {
+    font-size: 25px;
+}
+
+#home p {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    font-family: var(--font4);
+}

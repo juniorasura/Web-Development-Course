@@ -1,0 +1,317 @@
+/* CSS */
+:root {
+    --font1: 'Baloo Bhai 2', cursive;
+    --font2: 'Roboto', sans-serif;
+    --font3: 'Ubuntu', sans-serif;
+    --font4: 'Baloo Bhai 2', cursive;
+    --font5: 'Edu VIC WA NT Beginner', cursive;
+    --font6: 'Bree Serif', serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+
+}
+
+/* CSS VARIABLES */
+
+
+/* NAVIGATION BAR */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+   
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+/* NAVIGATION BAR: Logo */
+#logo {
+    margin: 10px 34px;
+    float: left;
+}
+
+#logo a {
+    height: 55px;
+    margin: 3px 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-family: var(--font2);
+    font-size: 1.8rem;
+}
+
+#logo a span {
+    color: red;
+}
+
+/* NAVIGATION BAR: List styling */
+
+
+#navbar ul {
+    display: flex;
+    position: sticky;
+}
+
+#navbar ul li {
+    font-size: 1.1rem;
+    list-style: none;
+    margin-left: 25px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 25px;
+    font-family: var(--font2);
+}
+
+#navbar ul li a:hover {
+    color: red;
+    background-color: transparent;
+    border: 0.00001px solid white;
+}
+
+/* HOME SECTION */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 3px 100px;
+
+}
+
+#home::before {
+    content: "";
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    z-index: -1;
+    opacity: 0.84;
+}
+
+/* SERVICES SECTION */
+.services-container {
+    margin-top: 120px;
+}
+
+#services {
+    margin: 14px;
+    display: flex;
+    
+}
+
+#services .box {
+    /* border: 2px solid red; */
+    padding: 30px;
+    margin: 3px;
+    border-radius: 7px;
+    background-color: rgb(245, 238, 238);
+}
+#services .box p{
+    text-align: center;
+}
+
+#services .box img {
+    height: 170px;
+    margin: auto;
+    display: block;
+    border-radius: 4px;
+
+}
+
+#services .box {
+    font-family: var(--font5);
+}
+
+#services .box .btn {
+    color: red;
+    border: 0.1px solid red;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#services .box .btn:hover {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.767);
+    transform: translateY(-5px);
+}
+
+/* Utility classes */
+.h-primary {
+    font-size: 2.2rem;
+    padding: 8px;
+    font-family: var(--font3);
+}
+
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 8px;
+    font-family: var(--font3);
+}
+
+.center {
+    text-align: center;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    font-family: var(--font4);
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    margin-top: 18px;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background-color: brown;
+    cursor: pointer;
+}
+
+/* OS-section */
+#os-section {
+
+    position: relative;
+    margin-top: 42px;
+}
+
+#os {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#os img {
+    height: 175;
+}
+
+#os-items {
+    padding: 45px;
+    margin: 32px;
+}
+
+#os-section::before {
+    content: '';
+    background: url(../img/os-bg.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.3;
+
+}
+
+/* contact-section */
+#contact {
+    position: relative;
+    margin-top: 44px;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(../img/os-bg1.jpg) no-repeat center center/cover;
+    opacity: 0.9;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 35%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: var(--font4);
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    border: 1.5px solid white;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    color: white;
+    font-size: 0.9rem;
+    background-color: transparent;
+}
+
+#send {
+    margin-top: 10px;
+    width: 25%;
+    border: 1.5px solid white;
+    padding: 0.5rem;
+    border-radius: 6px;
+    color: aliceblue;
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+
+#send:hover {
+    border: 2px solid green;
+    color: green;
+    background-color: aliceblue;
+}
+
+/* footer section */
+footer {
+    background-color: rgba(0, 0, 0, 0.918);
+    color: white;
+    padding: 9px 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
